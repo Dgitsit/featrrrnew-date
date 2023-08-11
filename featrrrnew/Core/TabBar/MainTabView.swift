@@ -49,7 +49,7 @@ struct MainTabView: View {
                     }
                     .tag(2)
                 
-                MessagesView()
+                InboxView()
                     .onAppear {
                         selectedIndex = 3
                     }

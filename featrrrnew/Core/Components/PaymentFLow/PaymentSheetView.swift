@@ -172,7 +172,8 @@ struct PaymentSheetView: View {
                     }
                     .sheet(isPresented: $showBottomSheet) {
                         
-                        ChatView(user: user)
+                        //ChatView(user: user)
+                        ChatsView(user: user)
                         
                     }
                 }

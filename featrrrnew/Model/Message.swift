@@ -5,6 +5,7 @@
 //  Created by Buddie Booking on 7/25/23.
 //
 
+import Foundation
 import FirebaseFirestoreSwift
 import Firebase
 
@@ -27,4 +28,8 @@ struct Message: Identifiable, Hashable, Codable { //change Codable to Decodable
     var isFromCurrentUser: Bool {
         return fromId == Auth.auth().currentUser?.uid
     }//
+    
+    var timestampString: String {
+        return timestamp.dateValue().timestampString()
+    }
 }

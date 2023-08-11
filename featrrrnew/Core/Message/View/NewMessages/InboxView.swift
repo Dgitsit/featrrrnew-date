@@ -9,24 +9,35 @@ import SwiftUI
 
 struct InboxView: View {
     
-    let user: User
+    //let user: User
     @StateObject var viewModel = InboxViewModel()
-    /*private var user: User? {
+    private var user: User? {
         return viewModel.currentUser
-    }*/
+    }
     
     var body: some View {
         
         NavigationStack{
-            ScrollView {
+            
                 List {
-                    ForEach(0 ... 10, id: \.self) { message in
-                        InboxRowView(user: user)
+                    ForEach(viewModel.recentMessages) { message in
+                        ZStack {
+                            NavigationLink(value: message) {
+                                EmptyView()
+                            }.opacity(0.0)
+                            
+                            InboxRowView(message: message)
+                        }
                     }
                 }
                 .listStyle(PlainListStyle())
-                .frame(height: UIScreen.main.bounds.height - 120)
-            }
+                
+            
+            .navigationDestination(for: Message.self, destination: { message in
+                if let user = message.user {
+                    ChatView(user: user)
+                }
+            })
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack {
@@ -44,6 +55,6 @@ struct InboxView: View {
 
 struct InboxView_Previews: PreviewProvider {
     static var previews: some View {
-        InboxView(user: dev.user)
+        InboxView()
     }
 }

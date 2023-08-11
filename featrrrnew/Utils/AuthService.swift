@@ -19,6 +19,7 @@ class AuthService {
         //self.userSession = Auth.auth().currentUser//
         //Task {try await MessageUserService.shared.fetchMessageCurrentUser()}//
         Task { try await loadUserData() }
+        loadCurrentUserData()
     }
     
     @MainActor
@@ -27,6 +28,7 @@ class AuthService {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
             self.user = try await UserService.fetchUser(withUid: result.user.uid)
+            loadCurrentUserData()
         } catch {
             print("DEBUG: Login failed \(error.localizedDescription)")
         }
@@ -38,6 +40,7 @@ class AuthService {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.userSession = result.user
             
+            
             let data: [String: Any] = [
                 "email": email,
                 "username": username,
@@ -46,6 +49,7 @@ class AuthService {
             
             try await COLLECTION_USERS.document(result.user.uid).setData(data)
             self.user = try await UserService.fetchUser(withUid: result.user.uid)
+            loadCurrentUserData()
         } catch {
             print("DEBUG: Failed to create user with error: \(error.localizedDescription)")
         }
@@ -64,6 +68,10 @@ class AuthService {
         self.userSession = nil
         self.user = nil
         try? Auth.auth().signOut()
+    }
+    
+    private func loadCurrentUserData() {
+        Task { try await UserService.shared.fetchCurrentUser() }
     }
 }
 
