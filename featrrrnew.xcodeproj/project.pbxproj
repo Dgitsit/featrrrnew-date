@@ -23,7 +23,6 @@
 		3F3331822A4E37C400ABB644 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3331812A4E37C400ABB644 /* PostListView.swift */; };
 		3F3331842A4E6E9700ABB644 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3331832A4E6E9700ABB644 /* ProfileHeaderView.swift */; };
 		3F3D2A572A6DDB8900D64FDF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D2A562A6DDB8900D64FDF /* ContentViewModel.swift */; };
-		3F3D2A5A2A6DDDE500D64FDF /* AuthsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D2A592A6DDDE500D64FDF /* AuthsServices.swift */; };
 		3F3D2A602A6DEC0600D64FDF /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D2A5F2A6DEC0600D64FDF /* RegistrationViewModel.swift */; };
 		3F3D2A622A6E082F00D64FDF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D2A612A6E082F00D64FDF /* LoginViewModel.swift */; };
 		3F3D2A642A6E300400D64FDF /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D2A632A6E300400D64FDF /* UserServices.swift */; };
@@ -131,7 +130,6 @@
 		3F3331812A4E37C400ABB644 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		3F3331832A4E6E9700ABB644 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		3F3D2A562A6DDB8900D64FDF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		3F3D2A592A6DDDE500D64FDF /* AuthsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthsServices.swift; sourceTree = "<group>"; };
 		3F3D2A5F2A6DEC0600D64FDF /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		3F3D2A612A6E082F00D64FDF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		3F3D2A632A6E300400D64FDF /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
@@ -274,7 +272,6 @@
 		3F3D2A582A6DDDAD00D64FDF /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				3F3D2A592A6DDDE500D64FDF /* AuthsServices.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -788,7 +785,6 @@
 				3F7EAE862A70DA660073DBC1 /* NotificationsViewModel.swift in Sources */,
 				3F4DF7D42A60E70D007167B9 /* TransactionAndCardView.swift in Sources */,
 				3FF537B92A84A8DD001B16BA /* UserService.swift in Sources */,
-				3F3D2A5A2A6DDDE500D64FDF /* AuthsServices.swift in Sources */,
 				3F7EAE692A7097EB0073DBC1 /* PreviewProvider.swift in Sources */,
 				3F7EAE6B2A70A40B0073DBC1 /* AuthService.swift in Sources */,
 				3FFBA9992A5A4F650067C2A2 /* CompletedHireView.swift in Sources */,
@@ -1014,9 +1010,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = buddie.featrrrnew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1043,9 +1042,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = buddie.featrrrnew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

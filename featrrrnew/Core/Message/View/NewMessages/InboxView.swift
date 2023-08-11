@@ -43,7 +43,7 @@ struct InboxView: View {
                     HStack {
                         CircularProfileImageView(user: user)
                         
-                        Text("Messages")
+                        Text("Featrrr Messages")
                             .font(.title)
                             .fontWeight(.semibold)
                     }
