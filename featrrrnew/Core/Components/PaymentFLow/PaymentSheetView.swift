@@ -41,6 +41,8 @@ struct PaymentSheetView: View {
     @State private var messageText = ""
     
     @State private var showBottomSheet = false
+    
+    //@Environment(\.dismiss) var dismiss
  
     
     func getTimeDifference(post: Post, start: Date, end: Date, rate: Double, isToggledTask: Bool, isToggledStoryPost: Bool, isToggledHr: Bool) -> Double {

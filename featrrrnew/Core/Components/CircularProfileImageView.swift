@@ -12,20 +12,32 @@ struct CircularProfileImageView: View {
     //let user: User
     var user: User?
     var body: some View {
-        if let imageUrl = user?.profileImageUrl {
-            KFImage(URL(string: imageUrl))
-                .resizable()
-                .scaledToFill()
-                .frame(width: 40, height: 40)
-                .clipShape(Circle())
-        } else {
-            Image(systemName: "person.circle.fill")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 40, height: 40)
-                .clipShape(Circle())
-                .foregroundColor(Color(.systemGray4))
+        VStack {
+            if let imageUrl = user?.profileImageUrl {
+                NavigationLink(value: user) {
+                    KFImage(URL(string: imageUrl))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                        .clipShape(Circle())
+                }
+                
+            }  else {
+                NavigationLink(value: user) {
+                    Image(systemName: "person.circle.fill")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 40, height: 40)
+                        .clipShape(Circle())
+                        .foregroundColor(Color(.systemGray4))
+                }
+                
+            }
         }
+        .navigationDestination(for: User.self, destination: { user in
+            ProfileView(user: user)
+        })
+            
     }
 }
 
@@ -34,3 +46,29 @@ struct CircularProfileImageView_Previews: PreviewProvider {
         CircularProfileImageView(user: dev.user)
     }
 }
+/*struct CircularProfileImageView: View {
+ //let user: User
+ var user: User?
+ var body: some View {
+     if let imageUrl = user?.profileImageUrl {
+         KFImage(URL(string: imageUrl))
+             .resizable()
+             .scaledToFill()
+             .frame(width: 40, height: 40)
+             .clipShape(Circle())
+     } else {
+         Image(systemName: "person.circle.fill")
+             .resizable()
+             .scaledToFill()
+             .frame(width: 40, height: 40)
+             .clipShape(Circle())
+             .foregroundColor(Color(.systemGray4))
+     }
+ }
+}
+
+struct CircularProfileImageView_Previews: PreviewProvider {
+ static var previews: some View {
+     CircularProfileImageView(user: dev.user)
+ }
+}*/

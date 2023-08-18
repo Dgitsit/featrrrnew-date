@@ -23,7 +23,7 @@ struct ChatsView: View {
                     CircularProfileImageView(user: user)
                     
                     VStack(spacing: 4) {
-                        Text("Banks")
+                        Text(user.username)
                             .font(.title)
                             .fontWeight(.semibold)
                         

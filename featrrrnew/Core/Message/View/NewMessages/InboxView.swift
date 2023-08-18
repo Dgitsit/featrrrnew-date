@@ -35,7 +35,7 @@ struct InboxView: View {
             
             .navigationDestination(for: Message.self, destination: { message in
                 if let user = message.user {
-                    ChatView(user: user)
+                    ChatsView(user: user)
                 }
             })
             .toolbar {
@@ -46,6 +46,7 @@ struct InboxView: View {
                         Text("Featrrr Messages")
                             .font(.title)
                             .fontWeight(.semibold)
+                            .foregroundColor(.purple)
                     }
                 }
             }

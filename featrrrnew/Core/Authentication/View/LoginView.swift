@@ -10,8 +10,13 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
+    @State private var isGuest: Bool = false
     @StateObject var viewModel = LoginViewModel()
     @EnvironmentObject var registrationViewModel: RegistrationViewModel
+    
+    func continueAsGuest(){
+        isGuest = true
+    }
     
     var body: some View {
         NavigationStack{
@@ -115,6 +120,7 @@ struct LoginView: View {
                 .padding(.vertical, 16)
             }
         }
+        
     }
 }
 

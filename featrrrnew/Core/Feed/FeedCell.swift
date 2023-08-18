@@ -20,6 +20,7 @@ struct FeedCell: View {
     
     var body: some View {
         VStack {
+            
             HStack {
                 if let user = viewModel.post.user {
                     CircularProfileImageView(user: user)
@@ -90,7 +91,7 @@ struct FeedCell: View {
                     VStack {
                     
                         Text("\(viewModel.post.city), \(viewModel.post.state) \(viewModel.post.country)")
-                            .padding(.horizontal)
+                            //.padding(.horizontal)
                     }
                     
                     Spacer()
