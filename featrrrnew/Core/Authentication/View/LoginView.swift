@@ -12,6 +12,7 @@ struct LoginView: View {
     @State private var password = ""
     @State private var isGuest: Bool = false
     @StateObject var viewModel = LoginViewModel()
+    @State var errorMessage = ""
     @EnvironmentObject var registrationViewModel: RegistrationViewModel
     
     func continueAsGuest(){
@@ -62,12 +63,14 @@ struct LoginView: View {
                 .opacity(formIsValid ? 1.0 : 0.5)
                 
                 Button {
-                    
+                    Task {
+                      try await  viewModel.signInAnonymous()
+                    }
                 } label: {
                     Text("Continue as guest")
                         .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.purple)
+                        .fontWeight(.bold)
+                        .foregroundColor(.green)
                         .cornerRadius(8)
                 }
                 .padding(.top)
@@ -92,11 +95,15 @@ struct LoginView: View {
                         Image("featrlogo")
                             .resizable()
                             .frame(width: 20, height: 20)
+                        Button {
+                            
+                        } label: {
+                            Text("Continue with Facebook")
+                                .font(.footnote)
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color(.systemBlue))
+                        }
                         
-                        Text("Continue with Facebook")
-                            .font(.footnote)
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color(.systemBlue))
                     }
                 }
                 .padding(.top, 4)
@@ -127,12 +134,49 @@ struct LoginView: View {
 // MARK: - AuthenticationFormProtocol
 
 extension LoginView: AuthenticationFormProtocol {
+   
     var formIsValid: Bool {
+        //errorMessage = ""
+        
         return !email.isEmpty
         && email.contains("@")
+        && email.contains(".")
         && !password.isEmpty
-        && password.count > 5
+        && password.count > 5 
+            
+           
     }
+    
+    /*private func validate() -> Bool {
+        if !formIsValid {
+            errorMessage = ""
+            guard !email.trimmingCharacters(in: .whitespaces).isEmpty, !password.trimmingCharacters(in: .whitespaces).isEmpty else {
+                
+                errorMessage = "Please fill in all fields."
+                return false
+            }
+        }
+            return true
+            
+        }
+     
+     
+     
+     
+     var formIsValid: Bool {
+         errorMessage = ""
+         
+         return !email.isEmpty
+         && email.contains("@")
+         && email.contains(".")
+         && !password.isEmpty
+         && password.count > 5
+     }
+     
+     
+     
+     */
+    
 }
 
 struct LoginView_Previews: PreviewProvider {

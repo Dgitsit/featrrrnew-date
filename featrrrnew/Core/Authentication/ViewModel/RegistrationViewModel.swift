@@ -41,6 +41,8 @@ class RegistrationViewModel: ObservableObject {
         self.usernameIsValid = snapshot.isEmpty
         self.isLoading = false
     }
+    
+    
 }
 /*class RegistrationViewModel: ObservableObject {
     @Published var username = ""

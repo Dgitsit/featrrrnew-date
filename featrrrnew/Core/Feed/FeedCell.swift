@@ -12,7 +12,7 @@ import Kingfisher
 struct FeedCell: View {
     @ObservedObject var viewModel: FeedCellViewModel
     
-    
+    @State private var bottomSheet = false
     
     init(viewModel: FeedCellViewModel) {
         self.viewModel = viewModel
@@ -52,7 +52,7 @@ struct FeedCell: View {
                 .clipShape(RoundedRectangle(cornerRadius: 10))
             
             
-            NavigationLink(destination: ReviewsView(post: viewModel.post)) {
+           /* NavigationLink(destination: ReviewsView(post: viewModel.post)) {
                 //Image(systemName: "bubble.right")
                 HStack {
                     Text("reviews")
@@ -65,7 +65,7 @@ struct FeedCell: View {
                     Spacer()
                 }
                     
-            }
+            }*/
             
             
             VStack {
@@ -77,7 +77,14 @@ struct FeedCell: View {
                     
                     Spacer()
                     
-                    Text("Rating")
+                    /*Button (action: {
+                        bottomSheet.toggle()
+                    }) {
+                        ReviewsView(post: viewModel.post)
+                    }*/
+                    
+
+                        
                     
                 }
                 

@@ -12,6 +12,7 @@ import Firebase
 class AuthService {
     @Published var user: User?
     @Published var userSession: FirebaseAuth.User?
+    @Published var errorMessage = ""
     
     static let shared = AuthService()
     
@@ -72,6 +73,18 @@ class AuthService {
     
     private func loadCurrentUserData() {
         Task { try await UserService.shared.fetchCurrentUser() }
+    }
+    @MainActor
+    func signInAnonymous() {
+        Task {
+            do {
+                try await Auth.auth().signInAnonymously()
+                errorMessage = ""
+            } catch {
+                print(error.localizedDescription)
+                errorMessage = error.localizedDescription
+            }
+        }
     }
 }
 
