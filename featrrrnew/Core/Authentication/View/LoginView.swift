@@ -12,12 +12,12 @@ struct LoginView: View {
     @State private var password = ""
     @State private var isGuest: Bool = false
     @StateObject var viewModel = LoginViewModel()
-    @State var errorMessage = ""
+    //@State var errorMessage = ""
     @EnvironmentObject var registrationViewModel: RegistrationViewModel
     
-    func continueAsGuest(){
+    /*func continueAsGuest(){
         isGuest = true
-    }
+    }*/
     
     var body: some View {
         NavigationStack{
@@ -63,9 +63,9 @@ struct LoginView: View {
                 .opacity(formIsValid ? 1.0 : 0.5)
                 
                 Button {
-                    Task {
-                      try await  viewModel.signInAnonymous()
-                    }
+                    /*Task {
+                        try await  viewModel.signInAnonymous()
+                    }*/
                 } label: {
                     Text("Continue as guest")
                         .font(.subheadline)

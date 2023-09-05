@@ -74,8 +74,10 @@ class AuthService {
     private func loadCurrentUserData() {
         Task { try await UserService.shared.fetchCurrentUser() }
     }
-    @MainActor
+    /*@MainActor
     func signInAnonymous() {
+        
+        
         Task {
             do {
                 try await Auth.auth().signInAnonymously()
@@ -85,6 +87,6 @@ class AuthService {
                 errorMessage = error.localizedDescription
             }
         }
-    }
+    }*/
 }
 

@@ -25,7 +25,7 @@ struct ContentView: View {
             /*else if let currentUser = viewModel.currentUser {
                 MainTabView(user: user, selectedIndex: $selectedIndex)*/
             }
-        }
+       }
         
     }
 }

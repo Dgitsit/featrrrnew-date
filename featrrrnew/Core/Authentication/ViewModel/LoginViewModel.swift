@@ -19,11 +19,24 @@ class LoginViewModel: ObservableObject {
         
     }
     
-    func signInAnonymous() async throws {
+   /*func signInAnonymous() async throws {
       await AuthService.shared.signInAnonymous()
-    }
+    }*/
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*class LoginViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
