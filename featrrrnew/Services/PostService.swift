@@ -18,9 +18,11 @@ struct PostService {
     
     static func fetchUserPosts(user: User) async throws -> [Post] {
         let snapshot = try await COLLECTION_POSTS.whereField("ownerUid", isEqualTo: user.id).getDocuments()
+       
         var posts = snapshot.documents.compactMap({try? $0.data(as: Post.self )})
         
         for i in 0 ..< posts.count {
+            
             posts[i].user = user
         }
         

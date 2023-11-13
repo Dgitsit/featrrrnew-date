@@ -19,7 +19,7 @@ class DeveloperPreview {
     
     var user = User(
         uid: NSUUID().uuidString,
-        username: "videovixen",
+        username: "TestUser",
         email: "vv@gmail.com",
         profileImageUrl: "https://via.placeholder.com/300.png",
         fullname: "Sakura Chan"
@@ -40,13 +40,7 @@ class DeveloperPreview {
             profileImageUrl: "videographer",
             fullname: "Bruce Wayne"
         ),
-        .init(
-            uid: NSUUID().uuidString,
-            username: "videovixen",
-            email: "batman@gmail.com",
-            profileImageUrl: "videovixen",
-            fullname: "Sakura Chan"
-        ),
+
         .init(
             uid: NSUUID().uuidString,
             username: "photgrapher",
@@ -64,28 +58,7 @@ class DeveloperPreview {
     ]
     
     var posts: [Post] = [
-        .init(
-            id: NSUUID().uuidString,
-             ownerUid: "videovixen",
-             postBio: "Love collabing w future legends",
-             rating: 0,
-             imageUrl: "videovixen",
-             timestamp: Timestamp(date: Date()),
-            hr: 190,
-             task: 85,
-             storyPost: 50,
-             city: "Houston",
-             state: "Texas",
-             country: "US",
-            category: "video vixen",
-            user: User(
-                uid: NSUUID().uuidString,
-                username: "videovixen",
-                email: "batman@gmail.com",
-                profileImageUrl: "videovixen",
-                fullname: "Sakura Chan"
-            )
-        ),
+
         .init(
             id: NSUUID().uuidString,
              ownerUid: "malemodel",
@@ -100,6 +73,8 @@ class DeveloperPreview {
              state: "New York",
              country: "US",
             category: "male model",
+            paidUsers: [],
+            refundRequestedUsers: [],
             user: User(
                 uid: NSUUID().uuidString,
                 username: "malemodel",
@@ -122,6 +97,8 @@ class DeveloperPreview {
              state: "Michigan",
              country: "US",
             category: "videographer",
+            paidUsers: [],
+            refundRequestedUsers: [],
             user: User(
                 uid: NSUUID().uuidString,
                 username: "videographer",
@@ -144,6 +121,8 @@ class DeveloperPreview {
              state: "California",
              country: "US",
             category: "photgrapher",
+            paidUsers: [],
+            refundRequestedUsers: [],
             user: User(
                 uid: NSUUID().uuidString,
                 username: "photgrapher",
@@ -166,6 +145,8 @@ class DeveloperPreview {
              state: "Florida",
              country: "US",
             category: "model",
+            paidUsers: [],
+            refundRequestedUsers: [],
             user: User(
                 uid: NSUUID().uuidString,
                 username: "model",

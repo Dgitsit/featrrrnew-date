@@ -90,6 +90,7 @@ extension FeedViewModel {
 //        self.posts = documents.compactMap({ try? $0.data(as: Post.self) })
         self.posts = documents.compactMap({
             do {
+                
                 return try $0.data(as: Post.self)
             }catch {
                 print(error)

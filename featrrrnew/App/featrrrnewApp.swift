@@ -8,11 +8,14 @@
 import SwiftUI
 
 import FirebaseCore
+import Stripe
+import StripePaymentsUI
 //@UIApplicationMain
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
+      StripeAPI.defaultPublishableKey="sk_test_51NV3D4HPhoixtOLjK1Qij1OP4CXHVfSfOzVI1sg0690oEWt6prVeM68ZNpbU0l7MgGfKAOvhKYvTSW2wk3hEwgOF00zGx31mFr"
     return true
   }
 }

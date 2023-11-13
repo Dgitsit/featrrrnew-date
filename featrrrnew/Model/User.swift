@@ -57,7 +57,7 @@ extension User {
         
             .init(id: NSUUID().uuidString, username: "videographer", profileImageUrl: nil, fullname: "NoEqual Tro", bio: "tro bio", email: "tro@gmail.com"),
         
-            .init(id: NSUUID().uuidString, username: "videovixen", profileImageUrl: nil, fullname: "NoEqual Ashley", bio: "ash bio", email: "ashley@gmail.com"),
+
         
         .init(id: NSUUID().uuidString, username: "model", profileImageUrl: nil, fullname: "NoEqual Monty", bio: "monty bio", email: "monty@gmail.com")
     ]

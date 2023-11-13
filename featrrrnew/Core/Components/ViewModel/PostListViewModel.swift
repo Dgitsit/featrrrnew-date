@@ -50,6 +50,7 @@ class PostListViewModel: ObservableObject {
     @MainActor
     func fetchUserPosts(forUser user: User) async throws {
         let posts = try await PostService.fetchUserPosts(user: user)
+       
         self.posts = posts
     }
 }

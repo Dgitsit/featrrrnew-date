@@ -30,6 +30,7 @@ struct FeedView: View {
                     TextField("Country", text: $ft_country)
                         .frame(height: 34)
                     Button("Apply") {
+
                         viewModel.updateFilter(category: ft_category, city: ft_city, state: ft_state, country: ft_country)
                         isShowFilter.toggle()
                     }
