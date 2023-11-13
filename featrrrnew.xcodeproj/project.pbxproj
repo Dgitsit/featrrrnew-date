@@ -104,6 +104,19 @@
 		3FFBA9952A5A490C0067C2A2 /* AfterAcceptedOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBA9942A5A490C0067C2A2 /* AfterAcceptedOfferView.swift */; };
 		3FFBA9972A5A4A4B0067C2A2 /* EnterCardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBA9962A5A4A4B0067C2A2 /* EnterCardInfoView.swift */; };
 		3FFBA9992A5A4F650067C2A2 /* CompletedHireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBA9982A5A4F650067C2A2 /* CompletedHireView.swift */; };
+		550D556A2B0283C7000BE3AF /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 550D55692B0283C7000BE3AF /* Stripe */; };
+		550D556C2B0283C7000BE3AF /* StripeApplePay in Frameworks */ = {isa = PBXBuildFile; productRef = 550D556B2B0283C7000BE3AF /* StripeApplePay */; };
+		550D556E2B0283C7000BE3AF /* StripeCardScan in Frameworks */ = {isa = PBXBuildFile; productRef = 550D556D2B0283C7000BE3AF /* StripeCardScan */; };
+		550D55702B0283C7000BE3AF /* StripeFinancialConnections in Frameworks */ = {isa = PBXBuildFile; productRef = 550D556F2B0283C7000BE3AF /* StripeFinancialConnections */; };
+		550D55722B0283C7000BE3AF /* StripeIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = 550D55712B0283C7000BE3AF /* StripeIdentity */; };
+		550D55742B0283C7000BE3AF /* StripePaymentSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 550D55732B0283C7000BE3AF /* StripePaymentSheet */; };
+		550D55762B0283C7000BE3AF /* StripePayments in Frameworks */ = {isa = PBXBuildFile; productRef = 550D55752B0283C7000BE3AF /* StripePayments */; };
+		550D55782B0283C7000BE3AF /* StripePaymentsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 550D55772B0283C7000BE3AF /* StripePaymentsUI */; };
+		550D557A2B028492000BE3AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 550D55792B028491000BE3AF /* GoogleService-Info.plist */; };
+		55680B1C2B027E7B0072FEC0 /* RefundRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55680B182B027E7B0072FEC0 /* RefundRepository.swift */; };
+		55680B1D2B027E7B0072FEC0 /* RefundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55680B192B027E7B0072FEC0 /* RefundViewModel.swift */; };
+		55680B1E2B027E7B0072FEC0 /* RefundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55680B1A2B027E7B0072FEC0 /* RefundView.swift */; };
+		55680B1F2B027E7B0072FEC0 /* RefundRequestResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55680B1B2B027E7B0072FEC0 /* RefundRequestResponseModel.swift */; };
 		84601F9B2A7C111400C7DE56 /* EditPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84601F9A2A7C111400C7DE56 /* EditPostView.swift */; };
 		84601F9D2A7C122400C7DE56 /* EditPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84601F9C2A7C122400C7DE56 /* EditPostViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -201,6 +214,11 @@
 		3FFBA9942A5A490C0067C2A2 /* AfterAcceptedOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterAcceptedOfferView.swift; sourceTree = "<group>"; };
 		3FFBA9962A5A4A4B0067C2A2 /* EnterCardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterCardInfoView.swift; sourceTree = "<group>"; };
 		3FFBA9982A5A4F650067C2A2 /* CompletedHireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedHireView.swift; sourceTree = "<group>"; };
+		550D55792B028491000BE3AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "featrrrnew/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55680B182B027E7B0072FEC0 /* RefundRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundRepository.swift; sourceTree = "<group>"; };
+		55680B192B027E7B0072FEC0 /* RefundViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundViewModel.swift; sourceTree = "<group>"; };
+		55680B1A2B027E7B0072FEC0 /* RefundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundView.swift; sourceTree = "<group>"; };
+		55680B1B2B027E7B0072FEC0 /* RefundRequestResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefundRequestResponseModel.swift; sourceTree = "<group>"; };
 		84601F9A2A7C111400C7DE56 /* EditPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostView.swift; sourceTree = "<group>"; };
 		84601F9C2A7C122400C7DE56 /* EditPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -210,11 +228,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550D556E2B0283C7000BE3AF /* StripeCardScan in Frameworks */,
+				550D556A2B0283C7000BE3AF /* Stripe in Frameworks */,
+				550D556C2B0283C7000BE3AF /* StripeApplePay in Frameworks */,
 				3F7EAE472A6F5B9C0073DBC1 /* Kingfisher in Frameworks */,
+				550D55742B0283C7000BE3AF /* StripePaymentSheet in Frameworks */,
 				3F99BCFB2A6DC15F007F890D /* FirebaseAnalytics in Frameworks */,
+				550D55722B0283C7000BE3AF /* StripeIdentity in Frameworks */,
+				550D55702B0283C7000BE3AF /* StripeFinancialConnections in Frameworks */,
 				3F99BCFD2A6DC15F007F890D /* FirebaseAuth in Frameworks */,
 				3F99BCFF2A6DC15F007F890D /* FirebaseFirestore in Frameworks */,
 				3F99BD032A6DC15F007F890D /* FirebaseStorage in Frameworks */,
+				550D55762B0283C7000BE3AF /* StripePayments in Frameworks */,
+				550D55782B0283C7000BE3AF /* StripePaymentsUI in Frameworks */,
 				3F99BD012A6DC15F007F890D /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +345,7 @@
 		3F686E802A4BB8E10014FD63 = {
 			isa = PBXGroup;
 			children = (
+				550D55792B028491000BE3AF /* GoogleService-Info.plist */,
 				3F686E8B2A4BB8E10014FD63 /* featrrrnew */,
 				3F686E8A2A4BB8E10014FD63 /* Products */,
 			);
@@ -391,6 +418,7 @@
 		3F686EA52A4BBB790014FD63 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				55680B172B027E7B0072FEC0 /* Refund */,
 				3F686EAD2A4BBCB50014FD63 /* Authentication */,
 				3F3331752A4E0FFA00ABB644 /* Calendar */,
 				3F3331682A4DFA6F00ABB644 /* Components */,
@@ -657,6 +685,17 @@
 			path = NewMessages;
 			sourceTree = "<group>";
 		};
+		55680B172B027E7B0072FEC0 /* Refund */ = {
+			isa = PBXGroup;
+			children = (
+				55680B182B027E7B0072FEC0 /* RefundRepository.swift */,
+				55680B192B027E7B0072FEC0 /* RefundViewModel.swift */,
+				55680B1A2B027E7B0072FEC0 /* RefundView.swift */,
+				55680B1B2B027E7B0072FEC0 /* RefundRequestResponseModel.swift */,
+			);
+			path = Refund;
+			sourceTree = "<group>";
+		};
 		84601F982A7C10DF00C7DE56 /* EditPost */ = {
 			isa = PBXGroup;
 			children = (
@@ -689,6 +728,14 @@
 				3F99BD002A6DC15F007F890D /* FirebaseFirestoreSwift */,
 				3F99BD022A6DC15F007F890D /* FirebaseStorage */,
 				3F7EAE462A6F5B9C0073DBC1 /* Kingfisher */,
+				550D55692B0283C7000BE3AF /* Stripe */,
+				550D556B2B0283C7000BE3AF /* StripeApplePay */,
+				550D556D2B0283C7000BE3AF /* StripeCardScan */,
+				550D556F2B0283C7000BE3AF /* StripeFinancialConnections */,
+				550D55712B0283C7000BE3AF /* StripeIdentity */,
+				550D55732B0283C7000BE3AF /* StripePaymentSheet */,
+				550D55752B0283C7000BE3AF /* StripePayments */,
+				550D55772B0283C7000BE3AF /* StripePaymentsUI */,
 			);
 			productName = featrrrnew;
 			productReference = 3F686E892A4BB8E10014FD63 /* featrrrnew.app */;
@@ -721,6 +768,7 @@
 			packageReferences = (
 				3F99BCF92A6DC15F007F890D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				3F7EAE452A6F5B9C0073DBC1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				550D55682B0283C7000BE3AF /* XCRemoteSwiftPackageReference "stripe-ios-spm" */,
 			);
 			productRefGroup = 3F686E8A2A4BB8E10014FD63 /* Products */;
 			projectDirPath = "";
@@ -738,6 +786,7 @@
 			files = (
 				3F686E942A4BB8E30014FD63 /* Preview Assets.xcassets in Resources */,
 				3F686E912A4BB8E30014FD63 /* Assets.xcassets in Resources */,
+				550D557A2B028492000BE3AF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -815,6 +864,7 @@
 				3FF537C12A85F606001B16BA /* Date.swift in Sources */,
 				3F7EAE812A70D8890073DBC1 /* Notification.swift in Sources */,
 				3F7EAE7F2A70D5240073DBC1 /* ReviewViewModel.swift in Sources */,
+				55680B1D2B027E7B0072FEC0 /* RefundViewModel.swift in Sources */,
 				3F3D2A672A6E31CA00D64FDF /* SearchViewModel.swift in Sources */,
 				3FF537B52A849B23001B16BA /* ChatsMessageCell.swift in Sources */,
 				84601F9B2A7C111400C7DE56 /* EditPostView.swift in Sources */,
@@ -825,14 +875,17 @@
 				3F7EAEA62A71DE1B0073DBC1 /* NotificationCell.swift in Sources */,
 				3F686EAF2A4BBD8B0014FD63 /* MainTabView.swift in Sources */,
 				3F3331802A4E261700ABB644 /* Post.swift in Sources */,
+				55680B1E2B027E7B0072FEC0 /* RefundView.swift in Sources */,
 				3F686EB52A4BCDC30014FD63 /* FeedCell.swift in Sources */,
 				3F33317E2A4E14F500ABB644 /* CurrentUserProfileView.swift in Sources */,
 				3F7EAE8C2A70E3F40073DBC1 /* CustomInputView.swift in Sources */,
 				3FF537BD2A85D568001B16BA /* ChatService.swift in Sources */,
+				55680B1C2B027E7B0072FEC0 /* RefundRepository.swift in Sources */,
 				3F7EAEA42A71DE080073DBC1 /* NotificationsView.swift in Sources */,
 				3F4DF7D22A60E6FC007167B9 /* PersonalInfoView.swift in Sources */,
 				3FF537BB2A85C23B001B16BA /* ChatsViewModel.swift in Sources */,
 				3FFBA9932A5A46D20067C2A2 /* InitialMessageView.swift in Sources */,
+				55680B1F2B027E7B0072FEC0 /* RefundRequestResponseModel.swift in Sources */,
 				3F734C712A5DF40D00998DD9 /* SettingsView.swift in Sources */,
 				3F7EAE522A6F8EE30073DBC1 /* PostService.swift in Sources */,
 				3F7EAE632A7095900073DBC1 /* Constants.swift in Sources */,
@@ -975,6 +1028,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1007,6 +1061,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1063,6 +1118,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		550D55682B0283C7000BE3AF /* XCRemoteSwiftPackageReference "stripe-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stripe/stripe-ios-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 23.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1095,6 +1158,46 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3F99BCF92A6DC15F007F890D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		550D55692B0283C7000BE3AF /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 550D55682B0283C7000BE3AF /* XCRemoteSwiftPackageReference "stripe-ios-spm" */;
+			productName = Stripe;
+		};
+		550D556B2B0283C7000BE3AF /* StripeApplePay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 550D55682B0283C7000BE3AF /* XCRemoteSwiftPackageReference "stripe-ios-spm" */;
+			productName = StripeApplePay;
+		};
+		550D556D2B0283C7000BE3AF /* StripeCardScan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 550D55682B0283C7000BE3AF /* XCRemoteSwiftPackageReference "stripe-ios-spm" */;
+			productName = StripeCardScan;
+		};
+		550D556F2B0283C7000BE3AF /* StripeFinancialConnections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 550D55682B0283C7000BE3AF /* XCRemoteSwiftPackageReference "stripe-ios-spm" */;
+			productName = StripeFinancialConnections;
+		};
+		550D55712B0283C7000BE3AF /* StripeIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 550D55682B0283C7000BE3AF /* XCRemoteSwiftPackageReference "stripe-ios-spm" */;
+			productName = StripeIdentity;
+		};
+		550D55732B0283C7000BE3AF /* StripePaymentSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 550D55682B0283C7000BE3AF /* XCRemoteSwiftPackageReference "stripe-ios-spm" */;
+			productName = StripePaymentSheet;
+		};
+		550D55752B0283C7000BE3AF /* StripePayments */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 550D55682B0283C7000BE3AF /* XCRemoteSwiftPackageReference "stripe-ios-spm" */;
+			productName = StripePayments;
+		};
+		550D55772B0283C7000BE3AF /* StripePaymentsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 550D55682B0283C7000BE3AF /* XCRemoteSwiftPackageReference "stripe-ios-spm" */;
+			productName = StripePaymentsUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
